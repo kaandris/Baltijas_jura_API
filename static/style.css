@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.panel {
+  position: absolute;
+  z-index: 1000;
+  background: rgba(255,255,255,0.96);
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  padding: 10px 12px;
+}
+
+#hover-info {
+  top: 12px;
+  right: 12px;
+  min-width: 240px;
+  pointer-events: none;
+}
+
+#toolbar {
+  top: 72px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+#profile-panel {
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  height: 280px;
+}
+
+#profile-panel.hidden {
+  display: none;
+}
+
+#profile-chart {
+  width: 100%;
+  height: 225px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+button {
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+}

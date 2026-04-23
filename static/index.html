@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Baltic Bathymetry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.9.0/ol.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/favicon.ico">
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="hover-info" class="panel">
+    Move over the sea…
+  </div>
+
+  <div id="toolbar" class="panel">
+    <button id="draw-profile">Draw profile</button>
+    <button id="clear-profile">Clear</button>
+  </div>
+
+  <div id="profile-panel" class="panel hidden">
+    <div class="panel-header">
+      <strong>Bathymetric profile</strong>
+      <button id="close-profile">×</button>
+    </div>
+    <canvas id="profile-chart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>
