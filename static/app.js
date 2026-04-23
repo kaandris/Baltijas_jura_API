@@ -36,7 +36,7 @@ const base = new TileLayer({
 
 const bathySource = new GeoTIFFSource({
   sources: [
-    { url: '/public/Baltic_bathymetry_COG-4326.tif' },
+    { url: '/public/Baltic_bathymetry_4326.tif' },
   ],
   projection: 'EPSG:4326',
   normalize: false,
